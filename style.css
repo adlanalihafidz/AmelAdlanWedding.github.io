@@ -1,0 +1,468 @@
+:root {
+    --blue: #1cbfdb;
+    --bg: #1f1f1f;
+    --shadow: 0 2px 2px rgba(8, 8, 8, 0.5);
+    --shadow2: 0 2px 2px rgba(194, 194, 194, 0.5);
+}
+
+
+body{
+    font-size: 1.2rem;
+    font-family: "Work Sans", sans-serif;
+    min-height: 2000px;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/foto\ depan\ 1a.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  transition: 4s;
+
+  animation-name: animate;
+  animation-direction: alternate-reverse;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+  animation-duration: 15s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animate {
+  20% {
+    background-image: url(img/foto\ depan\ 2a.png);
+  }
+  60% {
+    background-image: url(img/foto\ depan\ 3a.png);
+  }
+  100% {
+    background-image: url(img/foto\ depan\ 1a.png);
+  }
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    
+}
+
+.hero h1, .hero h4, .hero p { 
+    text-shadow: var(--shadow);
+
+}
+
+.hero h1 {
+    font-family: 'The Nautigal', cursive;
+    font-size: 9rem;
+}
+
+.hero h4 {
+    font-size: 1.2rem;
+}
+
+.hero p {
+    font-size: 1,2rem;
+}
+
+.hero a {
+    color: var(--blue);
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+    background-color: var(--blue);
+    color: white;
+}
+
+.mynavbar{
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas {
+  height: 100vh;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: 'The Nautigal', cursive;
+  font-size: 3.7rem;
+}
+
+.mynavbar .nav-link {
+  text-transform: uppercase;
+}
+
+.home {
+  min-height: 100vh;
+  margin-top: -6rem;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+}
+
+.home {
+  background-image: url(img/bg\ pattern.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.home h2,
+.gallery h2,
+.gifts h2,
+.disqus h2 {
+  color: var(--blue);
+  font-family: 'The Nautigal';
+  font-size: 7rem;
+  font-weight: bold;
+  text-shadow: var(--shadow2);
+}
+
+.home h3 {
+  color: #444;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.home .couple {
+  margin-top: 100px;
+}
+
+.home .couple h3 {
+  font-family: 'The Nautigal';
+  font-size: 2.8rem;
+  color: var(--blue);
+  text-shadow: var(--shadow2);
+}
+
+.home .couple img {
+   width: 100%;
+}
+
+.home .heart {
+  width: 50px; height: 50px;
+  background-color: white;
+  display: flex;
+  border-radius: 50%;
+  box-shadow: 0 0 5PX rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(130%);
+}
+
+.home .heart i {
+  margin: auto;
+  color: var(--blue);
+}
+
+.info {
+  color: white;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  background-image: url(img/bg2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+
+.info h2,
+.ucapan h2 {
+  color: white;
+  font-family: 'The Nautigal' ;
+  font-size: 7rem; font-weight: bold;
+  text-shadow: var(--shadow);
+}
+
+.rsvp h2 {
+  color: white;
+  font-family: 'The Nautigal' ;
+  font-size: 6rem; font-weight: bold;
+  text-shadow: var(--shadow);
+}
+
+.btn {
+  background-color: var(--blue);
+  color: white;
+}
+.btn:hover {
+  color: var(--blue);
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.info .alamat {
+  font-size: 1.1rem;
+}
+
+.info .description {
+  font-size: 1rem;
+  font-weight: 300;
+
+}
+
+.info .card {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  border: 1px solid #e7e7e7;
+}
+
+.info .card-header {
+  border-bottom: 1px solid #e7e7e7;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.info .card-body {
+  font-size: 1rem;
+}
+
+.info .card-footer {
+  border-top: 1px solid #e7e7e7;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.gallery,
+.rsvp,
+.gifts {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.gallery .video {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.disqus {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+}
+
+.gallery span,
+.gallery p,
+.gifts span,
+.gifts p,
+.disqus p {
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.rsvp p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: white;
+}
+
+.gifts,
+.disqus {
+  background-image: url(img/bg\ pattern.png);
+  background-size: cover;
+  background-position: center; 
+}
+
+.gallery {
+  background-image: url(img/bg\ pattern\ gallery.png);
+  background-size: cover;
+  background-position: center; 
+}
+
+.rsvp {
+  background-image: url(img/bg2.png);
+  background-size: cover;
+  background-position: center; 
+}
+
+.rsvp form label {
+  color: white;
+}
+
+.rsvp button,
+.gifts button {
+  background-color: var(--blue);
+  color: white;
+  border: 1px solid var(--blue);
+}
+
+.rsvp button:hover,
+.gifts button:hover {
+  background-color: white;
+  color: var(--blue);
+  border: 1px white;
+}
+
+.ucapan {
+  color: white;
+  padding-top: 50rem;
+  padding-bottom: 5rem;
+}
+
+.ucapan {
+  background-image: url(img/foto\ ucapan1.png);
+
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  animation: slide 13s infinite;
+}
+
+@keyframes slide {
+  0% {
+        background-image: url(img/foto\ ucapan1.png);
+        transform: translateX(0);
+  }
+  30% {
+    background-image: url(img/foto\ ucapan2.png);
+    transform: translateX(-100);
+}
+  60% {
+    background-image: url(img/foto\ ucapan3.png);
+    transform: translateX(-200);
+}
+100% {
+  background-image: url(img/foto\ ucapan1.png);
+  transform: translateX(-300);
+}
+}
+
+footer {
+  padding: 2rem;
+  background-color: var(--blue);
+  color: white;
+}
+
+footer a {
+  color: #1f1f1f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+}
+
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  mix-blend-mode: difference;
+  opacity: 0.4;
+  color: white;
+  animation: muter 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+@keyframes muter {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+  
+}
+
+/* Media Query */
+
+@media (max-width: 1500px) {
+  html {
+    font-size: 85%;
+  }
+  .simply-countdown >.simply-section {
+    padding: 75px;  
+  }
+}
+
+/* Extra large */
+@media (max-width: 1200px) {
+    .home .heart {
+      transform: translateX(-50%) translateY(45px);
+    }
+    html {
+      font-size: 75%;
+    }
+    .simply-countdown >.simply-section {
+      padding: 65px;  
+    }
+  }
+  
+  /* laptop */
+  @media (max-width: 992px) {
+    html {
+      font-size: 75%;
+    }
+    .simply-countdown >.simply-section {
+      padding: 50px;  
+    }
+    .home .heart {
+      display: none;
+  }
+
+  }
+
+  /* tablet */
+  @media (max-width: 768px) {
+    html {
+      font-size: 65%;
+    }
+    .simply-countdown >.simply-section {
+        padding: 40px;  
+        margin: 5px;
+
+    }
+    .mynavbar .nav-link {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .sticky-top {
+      overflow: hidden;
+    }
+    
+    
+    .timeline li .timeline-image {
+      widht: 140px;
+      height: 140px;
+    }
+  }
+  
+  /* mobile phone */
+  @media (max-width: 576px) {
+    html {
+      font-size: 55%;
+    }
+    .simply-countdown >.simply-section {
+        padding: 30px;  
+        margin: 2px;
+
+    }
+  }
