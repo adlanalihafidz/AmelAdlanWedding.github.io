@@ -94,7 +94,7 @@ body{
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-title {
   font-family: 'The Nautigal', cursive;
-  font-size: 3.7rem;
+  font-size: 2rem;
 }
 
 .mynavbar .nav-link {
@@ -103,7 +103,7 @@ body{
 
 .home {
   min-height: 100vh;
-  margin-top: -6rem;
+  margin-top: -4rem;
   padding-top: 15rem;
   padding-bottom: 15rem;
 }
@@ -188,7 +188,7 @@ body{
 .rsvp h2 {
   color: white;
   font-family: 'The Nautigal' ;
-  font-size: 5.5rem; font-weight: bold;
+  font-size: 5rem; font-weight: bold;
   text-shadow: var(--shadow);
 }
 
@@ -456,9 +456,9 @@ footer li {
   }
   
   /* mobile phone */
-  @media (max-width: 570px) {
+  @media (max-width: 400px) {
     html {
-      font-size: 55%;
+      font-size: 30%;
     }
     .simply-countdown >.simply-section {
         padding: 30px;  
