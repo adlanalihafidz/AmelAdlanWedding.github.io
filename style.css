@@ -94,7 +94,7 @@ body{
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-title {
   font-family: 'The Nautigal', cursive;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .mynavbar .nav-link {
@@ -398,6 +398,9 @@ footer li {
     .home .heart {
       transform: translateX(-50%) translateY(45px);
     }
+    .sticky-top {
+      overflow: hidden;
+    }
   }
   
   /* laptop */
@@ -411,7 +414,9 @@ footer li {
     .home .heart {
       display: none;
   }
-
+    .sticky-top {
+      overflow: hidden;
+    }
   }
 
   /* tablet */
