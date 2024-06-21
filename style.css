@@ -19,7 +19,7 @@ body{
   left: 0;
   width: 100%;
   height: 100vh;
-  background-image: url(img/foto\ depan\ 1.jpg);
+  background-image: url(img/foto\ depan\ 1c.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -37,13 +37,13 @@ body{
 
 @keyframes animate {
   20% {
-    background-image: url(img/foto\ depan\ 2.jpg);
+    background-image: url(img/foto\ depan\ 2c.jpg);
   }
   60% {
-    background-image: url(img/foto\ depan\ 3.jpg);
+    background-image: url(img/foto\ depan\ 3c.jpg);
   }
   100% {
-    background-image: url(img/foto\ depan\ 1.jpg);
+    background-image: url(img/foto\ depan\ 1c.jpg);
   }
 }
 
