@@ -190,42 +190,42 @@
 
         <div class="row row-cols-md-4 row-cols-sm-3 row-cols-2 justify-content-center">
            <div class="col mt-3">
-            <a href="gallery/gambar 1.webp" data-toggle="lightbox" data-caption="Adlan & Amel 1" data-gallery="mygallery">
+            <a href="gallery/gambar 1.webp" data-toggle="lightbox" data-caption="This describes the image" data-gallery="mygallery">
               <img src="gallery/thumbnail/thumbnail 1.png" alt="engagement 1" class="img-fluid w-100 rounded">
             </a>
            </div>
            <div class="col mt-3">
-            <a href="gallery/gambar 2.webp" data-toggle="lightbox" data-caption="Adlan & Amel 2" data-gallery="mygallery">
+            <a href="gallery/gambar 2.webp" data-toggle="lightbox" data-caption="This describes the image" data-gallery="mygallery">
               <img src="gallery/thumbnail/thumbnail 2.png" alt="engagement 1" class="img-fluid w-100 rounded">
             </a>
            </div>
            <div class="col mt-3">
-            <a href="gallery/gambar 3.webp" data-toggle="lightbox" data-caption="Adlan & Amel 3" data-gallery="mygallery">
+            <a href="gallery/gambar 3.webp" data-toggle="lightbox" data-caption="This describes the image" data-gallery="mygallery">
               <img src="gallery/thumbnail/thumbnail 3.png" alt="engagement 1" class="img-fluid w-100 rounded">
             </a>
            </div>
            <div class="col mt-3">
-            <a href="gallery/gambar 4.webp" data-toggle="lightbox" data-caption="Adlan & Amel 4" data-gallery="mygallery">
+            <a href="gallery/gambar 4.webp" data-toggle="lightbox" data-caption="This describes the image" data-gallery="mygallery">
               <img src="gallery/thumbnail/thumbnail 4.png" alt="engagement 1" class="img-fluid w-100 rounded">
             </a>
            </div>
            <div class="col mt-3">
-            <a href="gallery/gambar 5.webp" data-toggle="lightbox" data-caption="Adlan & Amel 5" data-gallery="mygallery">
+            <a href="gallery/gambar 5.webp" data-toggle="lightbox" data-caption="This describes the image" data-gallery="mygallery">
               <img src="gallery/thumbnail/thumbnail 5.png" alt="engagement 1" class="img-fluid w-100 rounded">
             </a>
            </div>
            <div class="col mt-3">
-            <a href="gallery/gambar 6.webp" data-toggle="lightbox" data-caption="Adlan & Amel 6" data-gallery="mygallery">
+            <a href="gallery/gambar 6.webp" data-toggle="lightbox" data-caption="This describes the image" data-gallery="mygallery">
               <img src="gallery/thumbnail/thumbnail 6.png" alt="engagement 1" class="img-fluid w-100 rounded">
             </a>
            </div>
            <div class="col mt-3">
-            <a href="gallery/gambar 7.webp" data-toggle="lightbox" data-caption="Adlan & Amel 7" data-gallery="mygallery">
+            <a href="gallery/gambar 7.webp" data-toggle="lightbox" data-caption="This describes the image" data-gallery="mygallery">
               <img src="gallery/thumbnail/thumbnail 7.png" alt="engagement 1" class="img-fluid w-100 rounded">
             </a>
            </div>
            <div class="col mt-3">
-            <a href="gallery/gambar 8.webp" data-toggle="lightbox" data-caption="Adlan & Amel 8" data-gallery="mygallery">
+            <a href="gallery/gambar 8.webp" data-toggle="lightbox" data-caption="This describes the image" data-gallery="mygallery">
               <img src="gallery/thumbnail/thumbnail 8.png" alt="engagement 1" class="img-fluid w-100 rounded">
             </a>
            </div>
@@ -293,13 +293,13 @@
             <li class="list-group-item">
               <div class="fw-bold">BCA</div> 
               <p>1234567890 - Adlan Ali Hafidz</p>
-              <img src="img/bca card.webp" alt="BCA Adlan Ali Hafidz" width="320">
+              <img src="img/webp/bca card.webp" alt="BCA Adlan Ali Hafidz" width="320">
               <div><button class="btn btn-primary" onclick="copyText()">Copy No. Rek</button></div>
             </li>
             <li class="list-group-item">
               <div class="fw-bold">BCA</div> 
               <p>1234567890 - Amelia Nur Aisha</p>
-              <img src="img/bca card amel.webp" alt="BCA Amelia Nur Aisha" width="320">
+              <img src="img/webp/bca card amel.webp" alt="BCA Amelia Nur Aisha" width="320">
               <div><button class="btn btn-primary" onclick="copyText1()">Copy No. Rek</button></div>
             </li>
           </ul>
@@ -312,7 +312,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
-            <h2>Ucapan & Do'a</h2>
+            <h2>Ucapan & Do'a</h2><br>
             <p>Doa Restu Anda merupakan karunia yang sangat berarti bagi kami</p>
           </div>
         </div>
@@ -450,11 +450,19 @@
 
 
     function enableScroll() {
-      window.onscroll = function () { }
-      rootElement.style.scrollBehavior = 'smooth';
-      //localStorage.setItem('opened', 'true');
-      playAudio();
-    }
+  // 1. Lepas kunci scroll
+  window.onscroll = function () { }
+  rootElement.style.scrollBehavior = 'smooth';
+  
+  // 2. Mainkan musik
+  playAudio();
+  
+  // 3. Otomatis gulir ke section 'home'
+  const homeSection = document.querySelector('#home');
+  if (homeSection) {
+    homeSection.scrollIntoView({ behavior: 'smooth' });
+  }
+}
 
     function playAudio() {
     song.volume = 0.6;
