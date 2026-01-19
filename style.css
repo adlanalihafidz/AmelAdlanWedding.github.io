@@ -19,7 +19,7 @@ body{
   left: 0;
   width: 100%;
   height: 100vh;
-  background-image: url(img/foto\ depan\ 1c.jpg);
+  background-image: url(img/foto\ depan\ 1.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -37,13 +37,13 @@ body{
 
 @keyframes animate {
   20% {
-    background-image: url(img/foto\ depan\ 2c.jpg);
+    background-image: url(img/foto\ depan\ 2a.webp);
   }
   60% {
-    background-image: url(img/foto\ depan\ 3c.jpg);
+    background-image: url(img/foto\ depan\ 3a.webp);
   }
   100% {
-    background-image: url(img/foto\ depan\ 1c.jpg);
+    background-image: url(img/foto\ depan\ 1.webp);
   }
 }
 
@@ -109,7 +109,7 @@ body{
 }
 
 .home {
-  background-image: url(img/bg\ pattern.png);
+  background-image: url(img/bg\ pattern.webp);
   background-size: cover;
   background-position: center;
 }
@@ -171,7 +171,7 @@ body{
   color: white;
   padding-top: 10rem;
   padding-bottom: 5rem;
-  background-image: url(img/bg2.png);
+  background-image: url(img/bg2.webp);
   background-size: cover;
   background-position: center;
 }
@@ -272,19 +272,19 @@ body{
 
 .gifts,
 .disqus {
-  background-image: url(img/bg\ pattern.png);
+  background-image: url(img/bg\ pattern.webp);
   background-size: cover;
   background-position: center; 
 }
 
 .gallery {
-  background-image: url(img/bg\ pattern\ gallery.png);
+  background-image: url(img/bg\ pattern\ gallery.webp);
   background-size: cover;
   background-position: center; 
 }
 
 .rsvp {
-  background-image: url(img/bg2.png);
+  background-image: url(img/bg2.webp);
   background-size: cover;
   background-position: center; 
 }
@@ -314,7 +314,7 @@ body{
 }
 
 .ucapan {
-  background-image: url(img/foto\ ucapan1.png);
+  background-image: url(img/foto\ ucapan1.webp);
 
   background-size: cover;
   background-position: center;
@@ -324,19 +324,19 @@ body{
 
 @keyframes slide {
   0% {
-        background-image: url(img/foto\ ucapan1.png);
+        background-image: url(img/foto\ ucapan1.webp);
         transform: translateX(0);
   }
   30% {
-    background-image: url(img/foto\ ucapan2.png);
+    background-image: url(img/foto\ ucapan2.webp);
     transform: translateX(-100);
 }
   60% {
-    background-image: url(img/foto\ ucapan3.png);
+    background-image: url(img/foto\ ucapan3.webp);
     transform: translateX(-200);
 }
 100% {
-  background-image: url(img/foto\ ucapan1.png);
+  background-image: url(img/foto\ ucapan1.webp);
   transform: translateX(-300);
 }
 }
