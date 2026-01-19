@@ -19,7 +19,7 @@ body{
   left: 0;
   width: 100%;
   height: 100vh;
-  background-image: url(img/foto\ depan\ 1.webp);
+  background-image: url('img/foto depan 1.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -37,13 +37,13 @@ body{
 
 @keyframes animate {
   20% {
-    background-image: url(img/foto\ depan\ 2a.webp);
+    background-image: url('img/foto depan 2a.webp');
   }
   60% {
-    background-image: url(img/foto\ depan\ 3a.webp);
+    background-image: url('img/foto depan 3a.webp');
   }
   100% {
-    background-image: url(img/foto\ depan\ 1.webp);
+    background-image: url('img/foto depan 1.webp');
   }
 }
 
@@ -94,7 +94,7 @@ body{
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-title {
   font-family: 'The Nautigal', cursive;
-  font-size: 3rem;
+  font-size: 3.7rem;
 }
 
 .mynavbar .nav-link {
@@ -103,13 +103,13 @@ body{
 
 .home {
   min-height: 100vh;
-  margin-top: -4rem;
+  margin-top: -6rem;
   padding-top: 15rem;
   padding-bottom: 15rem;
 }
 
 .home {
-  background-image: url(img/bg\ pattern.webp);
+  background-image: url('img/bg pattern.webp');
   background-size: cover;
   background-position: center;
 }
@@ -188,7 +188,7 @@ body{
 .rsvp h2 {
   color: white;
   font-family: 'The Nautigal' ;
-  font-size: 5rem; font-weight: bold;
+  font-size: 5.5rem; font-weight: bold;
   text-shadow: var(--shadow);
 }
 
@@ -272,19 +272,19 @@ body{
 
 .gifts,
 .disqus {
-  background-image: url(img/bg\ pattern.webp);
+  background-image: url('img/bg pattern.webp');
   background-size: cover;
   background-position: center; 
 }
 
 .gallery {
-  background-image: url(img/bg\ pattern\ gallery.webp);
+  background-image: url('img/bg pattern gallery.webp');
   background-size: cover;
   background-position: center; 
 }
 
 .rsvp {
-  background-image: url(img/bg2.webp);
+  background-image: url('img/bg2.webp');
   background-size: cover;
   background-position: center; 
 }
@@ -314,7 +314,7 @@ body{
 }
 
 .ucapan {
-  background-image: url(img/foto\ ucapan1.webp);
+  background-image: url('img/foto ucapan1.webp');
 
   background-size: cover;
   background-position: center;
@@ -324,19 +324,19 @@ body{
 
 @keyframes slide {
   0% {
-        background-image: url(img/foto\ ucapan1.webp);
+        background-image: url('img/foto ucapan1.png');
         transform: translateX(0);
   }
   30% {
-    background-image: url(img/foto\ ucapan2.webp);
+    background-image: url('img/foto ucapan2.png');
     transform: translateX(-100);
 }
   60% {
-    background-image: url(img/foto\ ucapan3.webp);
+    background-image: url('img/foto ucapan3.png');
     transform: translateX(-200);
 }
 100% {
-  background-image: url(img/foto\ ucapan1.webp);
+  background-image: url('img/foto ucapan1.png');
   transform: translateX(-300);
 }
 }
@@ -393,13 +393,25 @@ footer li {
 
 /* Media Query */
 
+@media (max-width: 1500px) {
+  html {
+    font-size: 85%;
+  }
+  .simply-countdown >.simply-section {
+    padding: 75px;  
+  }
+}
+
 /* Extra large */
 @media (max-width: 1200px) {
     .home .heart {
       transform: translateX(-50%) translateY(45px);
     }
-    .sticky-top {
-      overflow: hidden;
+    html {
+      font-size: 75%;
+    }
+    .simply-countdown >.simply-section {
+      padding: 65px;  
     }
   }
   
@@ -414,9 +426,7 @@ footer li {
     .home .heart {
       display: none;
   }
-    .sticky-top {
-      overflow: hidden;
-    }
+
   }
 
   /* tablet */
@@ -446,22 +456,13 @@ footer li {
   }
   
   /* mobile phone */
-  @media (max-width: 576px) {
+  @media (max-width: 400px) {
     html {
-      font-size: 55%;
+      font-size: 30%;
     }
     .simply-countdown >.simply-section {
         padding: 30px;  
         margin: 2px;
-    }
-    
-    .mynavbar .nav-link {
-      font-size: 1.5rem;
-      text-align: center;
-    }
 
-    .sticky-top {
-      overflow: hidden;
     }
-
   }
